@@ -51,18 +51,18 @@
 
 /* скрываем чекбокс */
 #menu__toggle {
-  opacity: 0;
+	opacity: 0;
 }
 
 /* стилизуем кнопку */
 .menu__btn {
-  display: flex; 
-  position: relative;
-  width: 24px;
-  height: 13.5px;
-  cursor: pointer;
-  z-index: 1;
-  margin: 20px 30px 0 0;
+	display: flex; 
+	position: relative;
+	width: 24px;
+	height: 13.5px;
+	cursor: pointer;
+	z-index: 1;
+	margin: 20px 30px 0 0;
 
   
 }
@@ -70,73 +70,73 @@
 .menu__btn > span,
 .menu__btn > span::before,
 .menu__btn > span::after {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 3px;
-  background-color: #EF8032;
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	background-color: #EF8032;
 }
 .menu__btn > span::before {
-  content: '';
-  top: -7px;
-  width: 100%;
+	content: '';
+	top: -7px;
+	width: 100%;
 }
 .menu__btn > span::after {
-  content: '';
-  top: 7px;
-  width: 100%;
+	content: '';
+	top: 7px;
+	width: 100%;
 }
 /* контейнер меню */
 .menu__box {
-  display: block;
-  position: fixed;
-  display: none;
-  position: absolute;
-  width: 100%;
-  margin-top: 18px;
-  list-style: none;
-  text-align: center;
-  background-color: #003b6f;
-  left:0;
-  z-index: 3;
-  border-top: 2px solid #427aab;
+	display: block;
+	position: fixed;
+	display: none;
+	position: absolute;
+	width: 100%;
+	margin-top: 18px;
+	list-style: none;
+	text-align: center;
+	background-color: #003b6f;
+	left:0;
+	z-index: 3;
+	border-top: 2px solid #427aab;
 }
 /* элементы меню */
 .menu__item {
-  display: block;
-  padding: 24px 24px;
-  color: #FFF;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-size: 22px;
-  font-weight: 300;
-  line-height: 59px;
-  text-align: center;
-  text-decoration: none;
+	display: block;
+	padding: 24px 24px;
+	color: #FFF;
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-size: 22px;
+	font-weight: 300;
+	line-height: 59px;
+	text-align: center;
+	text-decoration: none;
 }
 .menu__item:hover {
-  background-color: #004B8D;
+	background-color: #004B8D;
 }
 
 
                                  /*Открытие и анимация в крестик*/
 
 #menu__toggle:checked ~ .menu__btn > span {
-  transform: rotate(45deg);
+	transform: rotate(45deg);
 }
 #menu__toggle:checked ~ .menu__btn > span::before {
-  top: 0;
-  transform: rotate(0);
-  width: 100%;
+	top: 0;
+	transform: rotate(0);
+	width: 100%;
 }
 #menu__toggle:checked ~ .menu__btn > span::after {
-  top: 0;
-  transform: rotate(90deg);
-  width: 100%;
+	top: 0;
+	transform: rotate(90deg);
+	width: 100%;
 }
 #menu__toggle:checked ~ .menu__box {
-  display: block;
-  left: 0;
+	display: block;
+	left: 0;
 }
 
 /*Немного анимации*/
@@ -144,13 +144,13 @@
 .menu__btn > span,
 .menu__btn > span::before,
 .menu__btn > span::after {
-  transition-duration: .25s;
+	transition-duration: .25s;
 }
 .menu__box {
-  transition-duration: .25s;
+	transition-duration: .25s;
 }
 .menu__item {
-  transition-duration: .25s;
+	transition-duration: .25s;
 }
 /*Конец Стилизации Меню */
 
@@ -238,22 +238,22 @@
 	}
 
 	 .setka__treeblock {
-	width: 80%;
+		width: 80%;
 
 	}
 
 	.elemsetki {
-	width: 100%;
-	padding: 25px 0;
-	border: 1px solid #b3acac42;
-	
-	border-radius: 8px;
-	margin: 34px 0;
-	background-color: #fff;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+		width: 100%;
+		padding: 25px 0;
+		border: 1px solid #b3acac42;
+		
+		border-radius: 8px;
+		margin: 34px 0;
+		background-color: #fff;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 		img {
 			width: 170px;
 			height: auto;
@@ -308,21 +308,21 @@
 
 
 	.setka__fourblock {
-	width: 80%;
+		width: 80%;
 
 	}
 
 	.elemsetki {
-	width: 100%;
-	padding-bottom: 20px;
-	
-	border-radius: 8px;
-	margin: 34px 0;
-	background-color: #fff;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	
+		width: 100%;
+		padding-bottom: 20px;
+		
+		border-radius: 8px;
+		margin: 34px 0;
+		background-color: #fff;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		
 		img {
 			padding-top: 20px;
 			width: 150px;
