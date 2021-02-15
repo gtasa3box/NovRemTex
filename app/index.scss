@@ -25,10 +25,10 @@
 	height: 75px;
 	display: flex;
 	justify-content: space-between;
-	border-bottom: 2px solid #EF8032;
+	
 	z-index: 3;
 	position: relative;
-	box-shadow: 0 0 10px 0 #001f3a;
+	
 	
 }
 
@@ -157,16 +157,16 @@
 /*Первый блок*/
 .oneblock {
 	width: 100%;
-    height: 491px;
+    height: 493px;
     overflow: hidden;
-    border-bottom: 2px solid #EF8032;
+   
 }
 .fon__oneblock {
 	background-image: url(./static/zavod.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: -65px center;
-	height: 491px;
+	height: 493px;
 	width: 110%;
 	filter: brightness(0.9);
 }
@@ -205,7 +205,7 @@
 	justify-content: center;
 	color: #fff;
 	align-items: center;
-	border-bottom: 2px solid #EF8032;
+	
 }
 .text {
 	font-family: MyriadProRegular;
