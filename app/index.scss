@@ -299,7 +299,7 @@
 	flex-direction: column;
 	
 	padding-bottom: 34px;
-	& .zagolovok__fourblock {
+	.zagolovok__fourblock {
 		
 		margin-top: 40px;
 		color: #fff;
@@ -307,12 +307,12 @@
 	}
 
 
-	& .setka__fourblock {
+	.setka__fourblock {
 	width: 80%;
 
 	}
 
-	& .elemsetki {
+	.elemsetki {
 	width: 100%;
 	padding-bottom: 20px;
 	
@@ -323,17 +323,17 @@
 	flex-direction: column;
 	align-items: center;
 	
-		& img {
+		img {
 			padding-top: 20px;
 			width: 150px;
 			height: auto;
 			
 		}
-		& p {
+		p {
 			font-family: MyriadProRegular;
 			padding-top: 10px;
 		}
-		& a {
+		a {
 			margin-top: 15px;
 			padding: 8px 30px;			
 			text-align: center;
@@ -344,7 +344,7 @@
 			font-family: MyriadProRegular;
 			cursor: pointer;
 		}
-		& a:hover {
+		a:hover {
 			background-color: #177ed8;
 		}
 	}
