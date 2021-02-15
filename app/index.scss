@@ -1,0 +1,416 @@
+@import "./scss/global/_normalize.scss";
+
+@font-face {
+		font-family: "MyriadProRegular";
+		src: url("./fonts/MyriadProRegular/MyriadProRegular.eot");
+		src: url("./fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+		url("./fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+		url("./fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+		font-style: normal;
+		font-weight: normal;
+}
+@font-face {
+		font-family: "MyriadProBold";
+		src: url("./fonts/MyriadProBold/MyriadProBold.eot");
+		src: url("./fonts/MyriadProBold/MyriadProBold.eot?#iefix")format("embedded-opentype"),
+		url("./fonts/MyriadProBold/MyriadProBold.woff") format("woff"),
+		url("./fonts/MyriadProBold/MyriadProBold.ttf") format("truetype");
+		font-style: normal;
+		font-weight: normal;
+}
+
+.header {
+	width: 100%;
+	background-color: #004B8D;
+	height: 75px;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 2px solid #EF8032;
+	z-index: 3;
+	position: relative;
+	box-shadow: 0 0 10px 0 #001f3a;
+	
+}
+
+.img {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.logo {
+	background-image: url(./static/novwhite.png);
+	width: 151px;
+	height: 50px;
+}
+.logo__header {
+	padding: 10px 0 0 20px;
+}
+
+/* Стили бургера*/
+
+/* скрываем чекбокс */
+#menu__toggle {
+  opacity: 0;
+}
+
+/* стилизуем кнопку */
+.menu__btn {
+  display: flex; 
+  position: relative;
+  width: 24px;
+  height: 13.5px;
+  cursor: pointer;
+  z-index: 1;
+  margin: 20px 30px 0 0;
+
+  
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #EF8032;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -7px;
+  width: 100%;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 7px;
+  width: 100%;
+}
+/* контейнер меню */
+.menu__box {
+  display: block;
+  position: fixed;
+  display: none;
+  position: absolute;
+  width: 100%;
+  margin-top: 18px;
+  list-style: none;
+  text-align: center;
+  background-color: #003b6f;
+  left:0;
+  z-index: 3;
+  border-top: 2px solid #427aab;
+}
+/* элементы меню */
+.menu__item {
+  display: block;
+  padding: 24px 24px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 59px;
+  text-align: center;
+  text-decoration: none;
+}
+.menu__item:hover {
+  background-color: #004B8D;
+}
+
+
+                                 /*Открытие и анимация в крестик*/
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+  width: 100%;
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+  width: 100%;
+}
+#menu__toggle:checked ~ .menu__box {
+  display: block;
+  left: 0;
+}
+
+/*Немного анимации*/
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  transition-duration: .25s;
+}
+.menu__box {
+  transition-duration: .25s;
+}
+.menu__item {
+  transition-duration: .25s;
+}
+/*Конец Стилизации Меню */
+
+/*Первый блок*/
+.oneblock {
+	width: 100%;
+    height: 491px;
+    overflow: hidden;
+    border-bottom: 2px solid #EF8032;
+}
+.fon__oneblock {
+	background-image: url(./static/zavod.jpg);
+    background-size: cover;
+    background-position: -65px center;
+	height: 491px;
+	width: 100%;
+	filter: brightness(0.9);
+}
+.slogan__oneblock {
+	position: relative;
+	z-index: 2;
+	margin: -320px auto 0;
+	width: 100%;
+	background-color: #004B8D;
+	height: 100px;
+	opacity: 0.8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.zagolovok {
+	font-family: MyriadProRegular;
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+	&__oneblock{
+		line-height: 50px;
+		color: #fff;
+	}
+	&__twoblock {
+		padding-bottom: 50px;
+	}
+}
+/*Второй блок*/
+.twoblock {
+	width: 100%;
+	height: 568px;
+	background-color: #004B8D;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: #fff;
+	align-items: center;
+	border-bottom: 2px solid #EF8032;
+}
+.text {
+	font-family: MyriadProRegular;
+	&__twoblock {
+		padding: 0 40px;
+		p{
+			padding-top: 10px;
+			padding-bottom: 30px;
+		}
+		h3 {
+			color: #EF8032;
+			font-family: MyriadProBold;
+		}
+	}
+}
+
+.treeblock {
+	width: 100%;
+	background-color: #f0f0f0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	padding-bottom: 34px;
+	.zagolovok__treeblock {
+		
+		margin-top: 40px;
+		
+		
+	}
+
+	 .setka__treeblock {
+	width: 80%;
+
+	}
+
+	.elemsetki {
+	width: 100%;
+	padding: 25px 0;
+	border: 1px solid #b3acac42;
+	
+	border-radius: 8px;
+	margin: 34px 0;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+		img {
+			width: 170px;
+			height: auto;
+			border-radius: 5px;
+			padding: 15px 0;
+		}
+		p {
+			font-family: MyriadProRegular;
+			color: #000;
+			padding-top: 10px;
+			.pricered {
+				color: red;
+				text-decoration: line-through;
+			}
+			.pricegreen {
+				color: #1ada1a;
+			}
+		}
+	}
+	.title__elemsetki {
+		font-size: 18px;
+		font-weight: normal;
+
+
+
+
+	}
+}
+
+.fourblock {
+	width: 100%;
+	background-color: #004B8D;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	
+	padding-bottom: 34px;
+	& .zagolovok__fourblock {
+		
+		margin-top: 40px;
+		color: #fff;
+		
+	}
+
+
+	& .setka__fourblock {
+	width: 80%;
+
+	}
+
+	& .elemsetki {
+	width: 100%;
+	padding-bottom: 20px;
+	
+	border-radius: 8px;
+	margin: 34px 0;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+		& img {
+			padding-top: 20px;
+			width: 150px;
+			height: auto;
+			
+		}
+		& p {
+			font-family: MyriadProRegular;
+			padding-top: 10px;
+		}
+		& a {
+			margin-top: 15px;
+			padding: 5px 30px;			
+			text-align: center;
+			background-color: #004B8D;
+			
+			border-radius: 8px;
+			color: #fff;
+			font-family: MyriadProRegular;
+			cursor: pointer;
+		}
+		& a:hover {
+			background-color: #177ed8;
+		}
+	}
+}
+.fiveblock {
+	width: 100%;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	
+	padding-bottom: 34px;
+	.zagolovok__fiveblock {
+		margin-top: 40px;
+	}
+	.phone {
+		margin-top: 20px;
+		font-family: MyriadProRegular;
+	}
+	p {
+		margin-top: 20px;
+		font-family: MyriadProRegular;
+		padding: 0 20px;
+	}
+	.button {
+		margin-top: 40px;
+
+		a {
+			padding: 5px 25px;
+			height: 20px;
+			background-color: #004B8D;
+			
+			border-radius: 8px;
+			color: #fff;
+			font-family: MyriadProRegular;
+			cursor: pointer;
+		}
+		a:hover {
+			background-color: #177ed8;
+		}
+	}
+}
+.footer {
+	width: 100%;
+	background-color: #004B8D;
+	
+	color: #fff;
+	font-family: MyriadProRegular;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	.logo__footer {
+		padding: 20px 0 0;
+		.log_footer {
+			width: 120px;
+			height: 39.74px;
+			border-bottom: 1px solid #fff;
+
+		}
+	}
+	p {
+		padding: 15px 20px 20px;
+		text-align: center;
+		font-size: 12px;
+		color: #cecece;
+	}
+
+	.logo-bel {
+		background-image: url(./static/belzonalogo_en_w.png);
+		width: 100px;
+		height: 45.25px;
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		border-bottom: 1px solid #fff;
+	}
+}
