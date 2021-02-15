@@ -164,9 +164,10 @@
 .fon__oneblock {
 	background-image: url(./static/zavod.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: -65px center;
 	height: 491px;
-	width: 100%;
+	width: 110%;
 	filter: brightness(0.9);
 }
 .slogan__oneblock {
@@ -185,7 +186,7 @@
 	font-family: MyriadProRegular;
 	font-size: 20px;
 	text-align: center;
-	font-weight: bold;
+	
 	&__oneblock{
 		line-height: 50px;
 		color: #fff;

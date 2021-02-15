@@ -25,7 +25,7 @@ module.exports = {
         watch: true,
       }
     ],
-    port: 3555,
+    port: 3090,
   },
 
   module: {
