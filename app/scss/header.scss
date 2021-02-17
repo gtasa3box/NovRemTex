@@ -119,8 +119,12 @@
 }
 .menu__item:hover {
 	background-color: #004B8D;
-
+	@media screen and (min-width: 1200px) {
+		background-color: #003b6f;
+	}
 }
+
+
 
 
                                  /*Открытие и анимация в крестик*/
