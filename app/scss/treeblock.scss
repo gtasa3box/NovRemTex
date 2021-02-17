@@ -1,0 +1,73 @@
+.treeblock {
+	width: 100%;
+	background-color: #f0f0f0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	padding-bottom: 34px;
+	&__title {
+		margin-top: 40px;
+	}
+
+	&__grid {
+		width: 80%;
+		@media screen and (min-width: 765px) {
+			width: 90%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+		}
+	}
+
+	&__title {
+		font-size: 18px;
+		font-weight: normal;
+	}
+}
+.elemgrid {
+	width: 100%;
+	padding: 25px 0;
+	border: 1px solid #b3acac42;
+	border-radius: 8px;
+	margin: 34px 0;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	will-change: transform;
+		@media screen and (min-width: 765px) {
+			width: 30%;
+		}
+		@media screen and (min-width: 1350px) {
+			width: 23%;
+		}
+	img {
+		width: 170px;
+		height: auto;
+		border-radius: 5px;
+		padding: 15px 0;
+	}
+	p {
+		font-family: MyriadProRegular;
+		color: #6f6f6f;
+		padding-top: 10px;
+		.pricered {
+			color: #fff ;
+			text-decoration: line-through;
+			font-family: MyriadProBold;
+			background-color: #ea4040;
+			padding: 2px 5px;
+			border-radius: 5px;
+		}
+		.pricegreen {
+			color: #fff;
+			font-family: MyriadProBold;
+			background-color: #2f902f;
+			padding: 2px 5px;
+			border-radius: 5px;
+		}
+	}
+}
+

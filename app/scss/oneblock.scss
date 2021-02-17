@@ -1,0 +1,44 @@
+/*Первый блок*/
+.oneblock {
+	width: 100%;
+	height: 313px;
+	overflow: hidden;
+	background-image: url(./static/zavod.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #111;
+	@media screen and (min-width: 765px) {
+		height: 500px;
+	}
+	&__tagline {
+		position: relative;
+		width: 100%;
+		background-color: #1f2a33;
+		height: 100px;
+		opacity: 0.8;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		p {
+			font-size: 13px;
+			color: #fff;
+		}
+	}
+}
+.title {
+	font-family: MyriadProRegular;
+	font-size: 20px;
+	text-align: center;
+	
+	&__oneblock{
+		line-height: 50px;
+		color: #fff;
+	}
+	&__twoblock {
+		padding-bottom: 50px;
+	}
+}
+

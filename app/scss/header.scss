@@ -1,0 +1,160 @@
+.header {
+	width: 100%;
+	background-color: #004B8D;
+	height: 75px;
+	display: flex;
+	justify-content: space-between;
+	z-index: 3;
+	position: relative;
+	@media screen and (min-width: 1200px){
+		height: 80px;
+	}
+
+	&__logo {
+		padding: 10px 0 0 20px;
+		@media screen and (min-width: 1200px) {
+			padding: 10px 0 0 40px;
+		}
+	}
+}
+
+.logo {
+	background-image: url(./static/novwhite.png);
+	width: 151px;
+	height: 50px;
+}
+
+.img {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+
+
+/* Стили бургера*/
+
+/* скрываем чекбокс */
+#menu__toggle {
+	opacity: 0;
+	@media screen and (min-width: 1200px) {
+		display: none;
+	}
+}
+
+/* стилизуем кнопку */
+.menu__btn {
+	display: flex; 
+	position: relative;
+	width: 24px;
+	height: 13.5px;
+	cursor: pointer;
+	z-index: 1;
+	margin: 20px 30px 0 0;
+	@media screen and (min-width: 1200px) {
+		display: none;
+	}
+
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	background-color: #EF8032;
+}
+.menu__btn > span::before {
+	content: '';
+	top: -7px;
+	width: 100%;
+}
+.menu__btn > span::after {
+	content: '';
+	top: 7px;
+	width: 100%;
+}
+/* контейнер меню */
+.menu__box {
+	display: block;
+	position: fixed;
+	display: none;
+	position: absolute;
+	width: 100%;
+	margin-top: 18px;
+	list-style: none;
+	text-align: center;
+	background-color: #003b6f;
+	left:0;
+	z-index: 3;
+	border-top: 2px solid #427aab;
+	@media screen and (min-width: 1200px) {
+		display: flex;
+		visibility: visible;
+		position: relative;
+		background-color: inherit;
+		border-top: none;
+		margin-top: 0;
+		margin-right: 25px;
+	}
+}
+/* элементы меню */
+.menu__item {
+	display: block;
+	padding: 24px 24px;
+	color: #FFF;
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-size: 22px;
+	font-weight: 300;
+	line-height: 59px;
+	text-align: center;
+	text-decoration: none;
+	@media screen and (min-width: 1200px) {
+		padding: 11px 25px;
+	}
+}
+.menu__item:hover {
+	background-color: #004B8D;
+
+}
+
+
+                                 /*Открытие и анимация в крестик*/
+
+#menu__toggle:checked ~ .menu__btn > span {
+	transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+	top: 0;
+	transform: rotate(0);
+	width: 100%;
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+	top: 0;
+	transform: rotate(90deg);
+	width: 100%;
+}
+#menu__toggle:checked ~ .menu__box {
+	display: block;
+	left: 0;
+}
+
+/*Немного анимации*/
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+	transition-duration: .25s;
+}
+.menu__box {
+	transition-duration: .25s;
+}
+.menu__item {
+	transition-duration: .25s;
+}
+/*Конец Стилизации Меню */
+
