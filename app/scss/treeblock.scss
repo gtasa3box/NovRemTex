@@ -4,42 +4,38 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	
-	padding-bottom: 34px;
+	padding: 0 50px 34px 50px;
+	box-sizing: border-box;
 	&__title {
 		margin-top: 40px;
 	}
 
 	&__grid {
-		width: 80%;
-		@media screen and (min-width: 765px) {
-			width: 90%;
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-evenly;
-		}
+		width: 100%;
 	}
 
 	&__title {
 		font-size: 18px;
 		font-weight: normal;
 	}
-}
+} 
 .elemgrid {
 	width: 100%;
 	padding: 25px 0;
 	border: 1px solid #b3acac42;
 	border-radius: 8px;
-	margin: 34px 0;
 	background-color: #fff;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	will-change: transform;
+	margin: 34px 5px;
 		@media screen and (min-width: 765px) {
 			width: 30%;
+			min-width: 200px;
 			max-width: 250px;
+			margin: 34px 20px;
 		}
 		@media screen and (min-width: 1350px) {
 			width: 23%;
@@ -49,11 +45,13 @@
 		height: auto;
 		border-radius: 5px;
 		padding: 15px 0;
+		margin: 0 auto;
 	}
 	p {
 		font-family: MyriadProRegular;
 		color: #6f6f6f;
 		padding-top: 10px;
+		text-align: center;
 		.pricered {
 			color: #fff ;
 			text-decoration: line-through;
@@ -70,5 +68,22 @@
 			border-radius: 5px;
 		}
 	}
+		a {
+			display: block;
+			margin: 20px auto 0;
+			max-width: 30%;
+			text-align: center;
+			padding: 8px 25px;
+			height: 20px;
+			background-color: #004B8D;
+			border-radius: 8px;
+			color: #fff;
+			font-family: MyriadProRegular;
+			cursor: pointer;
+		}
+		a:hover {
+			background-color: #177ed8;
+		}
+	
 }
 

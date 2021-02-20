@@ -2,12 +2,16 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-  <title>НовРемТех</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
+</script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
+<title>НовРемТех</title>
 </head>
 <body>
 	<header class="header">
@@ -31,10 +35,10 @@
 	</header>
 	<div class="wrapper">
 		<section class="oneblock">
-			<div class="background oneblock__background"></div>
 			<div class="oneblock__tagline">
-				<h1 data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300"data-aos-offset="0" class="title title__oneblock">Ремонт вместо замены</h1>
+				<h1 class="title title__oneblock">Ремонт вместо замены</h1>
 				<p class="text">Ремонт вместо замены всем всем всем</p>
+				<a class="oneblock__tagline__button popup-open">Связаться!</a>
 			</div>
 		</section>
 		<section class="twoblock">
@@ -56,42 +60,48 @@
 			<div class="treeblock__title">
 				<h2 class="title">Сравнение цен</h2>
 			</div>
-			<div class="treeblock__grid">
-				<div data-aos="fade-right" class="elemgrid">
-					<h3 class="title elemgrid__title">Ебаный насос</h3>
-					<img src="static/nasos.jpg" alt="насос">
-					<p>Цена замены: <span class="pricered">90000000р</span></p>
-					<p>Цена ремонта: <span class="pricegreen">150р</span></p>
-				</div>
-				<div data-aos="fade-right" class="elemgrid">
-					<h3 class="title elemgrid__title">Ебаный насос</h3>
+			<div class="treeblock__grid js-slick">
+				<div class="elemgrid">
+					<h3 class="title elemgrid__title">Насос</h3>
 					<img src="static/nasos.jpg" alt="">
 					<p>Цена замены: <span class="pricered">90000000р</span></p>
 					<p>Цена ремонта: <span class="pricegreen">150р</span></p>
+					<a class="">Подробнее</a>
 				</div>
-				<div data-aos="fade-right" class="elemgrid">
-					<h3 class="title elemgrid__title">Ебаный насос</h3>
+				<div class="elemgrid">
+					<h3 class="title elemgrid__title">Насос</h3>
 					<img src="static/nasos.jpg" alt="">
 					<p>Цена замены: <span class="pricered">90000000р</span></p>
 					<p>Цена ремонта: <span class="pricegreen">150р</span></p>
+					<a class="">Подробнее</a>
 				</div>
-				<div data-aos="fade-right" class="elemgrid">
-					<h3 class="title elemgrid__title">Ебаный насос</h3>
+				<div class="elemgrid">
+					<h3 class="title elemgrid__title">Насос</h3>
 					<img src="static/nasos.jpg" alt="">
 					<p>Цена замены: <span class="pricered">90000000р</span></p>
 					<p>Цена ремонта: <span class="pricegreen">150р</span></p>
+					<a class="">Подробнее</a>
 				</div>
-				<div data-aos="fade-right" class="elemgrid">
-					<h3 class="title elemgrid__title">Ебаный насос</h3>
+				<div class="elemgrid">
+					<h3 class="title elemgrid__title">Насос</h3>
 					<img src="static/nasos.jpg" alt="">
 					<p>Цена замены: <span class="pricered">90000000р</span></p>
 					<p>Цена ремонта: <span class="pricegreen">150р</span></p>
+					<a class="">Подробнее</a>
 				</div>
-				<div data-aos="fade-right" class="elemgrid">
-					<h3 class="title elemgrid__title">Ебаный насос</h3>
+				<div class="elemgrid">
+					<h3 class="title elemgrid__title">Насос</h3>
 					<img src="static/nasos.jpg" alt="">
 					<p>Цена замены: <span class="pricered">90000000р</span></p>
 					<p>Цена ремонта: <span class="pricegreen">150р</span></p>
+					<a class="">Подробнее</a>
+				</div>
+				<div class="elemgrid">
+					<h3 class="title elemgrid__title">Насос</h3>
+					<img src="static/nasos.jpg" alt="">
+					<p>Цена замены: <span class="pricered">90000000р</span></p>
+					<p>Цена ремонта: <span class="pricegreen">150р</span></p>
+					<a class="">Подробнее</a>
 				</div>
 			</div>
 		</section>
@@ -99,23 +109,23 @@
 			<div class="fourblock__title">
 				<h2 class="title">Довольные клиенты</h2>
 			</div>
-			<div class="fourblock__grid">
-				<div data-aos="fade-right" class="elemgrid">
+			<div class="fourblock__grid js-slick">
+				<div class="elemgrid">
 					<img src="static/luklogo.png" alt="">
 					<p>Лукойл</p>
 					<a href="">Отзыв</a>
 				</div>
-				<div data-aos="fade-right" class="elemgrid">
+				<div class="elemgrid">
 					<img src="static/luklogo.png" alt="">
 					<p>Лукойл</p>
 					<a href="">Отзыв</a>
 				</div>
-				<div data-aos="fade-right" class="elemgrid">
+				<div class="elemgrid">
 					<img src="static/luklogo.png" alt="">
 					<p>Лукойл</p>
 					<a href="">Отзыв</a>
 				</div>
-				<div data-aos="fade-right" class="elemgrid">
+				<div class="elemgrid">
 					<img src="static/luklogo.png" alt="">
 					<p>Лукойл</p>
 					<a href="">Отзыв</a>
@@ -129,7 +139,18 @@
 				</div>
 				<div class="fiveblock__phone"><a href="tel:+78312465432">+7 (8312) 46-54-32</a></div>
 				<p>603002, г.Н.Новгород ул.Обухова 11, оф.208</p>
-				<div data-aos="fade-right" class="fiveblock__button"><a>Свяжись</a></div>
+				<div class="fiveblock__button"><a class="popup-open" href="">Свяжись</a></div>
+			</div>
+
+						<!--Модальное окно-->
+
+			<div class="popup-overlay">
+				<div class="popup">
+					<a class="popup-close" href="#">Закрыть</a>
+					<input type="email"> Ваша почта
+
+					<p>Всплывающие окна имеют широкий диапазон применений...</p>
+				</div>
 			</div>
 		</section>
 		<section class="footer">
@@ -139,10 +160,7 @@
 			<p>Региональный представитель фирмы Belzona Polymerics Ltd.</p>
 		</section>
 	</div>
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script>
-  		AOS.init();
-	</script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 </body>
 
 </html>
