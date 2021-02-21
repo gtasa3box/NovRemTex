@@ -7,10 +7,10 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
 </script>
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <title>НовРемТех</title>
 </head>
 <body>
@@ -43,7 +43,7 @@
 		</section>
 		<section class="twoblock">
 			<div id="1" class="title__twoblock">
-				<h2 class="title">Очевидные приемущества:</h2>
+				<h2 class="title">Очевидные преимущества:</h2>
 			</div>
 			<div class="text text__twoblock">
 				<h3>— Экономия</h3> 
@@ -146,10 +146,16 @@
 
 			<div class="popup-overlay">
 				<div class="popup">
-					<a class="popup-close" href="#">Закрыть</a>
-					<input type="email"> Ваша почта
-
-					<p>Всплывающие окна имеют широкий диапазон применений...</p>
+					<a class="popup-close" href="#"></a>
+					<form>
+						<label for="email">Введите email</label>
+						<input class="popup__input" id="email" type="email" value="">
+						<label for="number">Введите номер телефона</label>
+						<input class="popup__input" id="number" type="number" value="">
+						<p>Дополнительная информация:</p>
+						<textarea class="popup_textarea"></textarea>
+						<button type="submit" class="popup__button" name="submitbtn" value="">Отправить</button>
+					</form>
 				</div>
 			</div>
 		</section>

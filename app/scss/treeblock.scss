@@ -21,7 +21,7 @@
 } 
 .elemgrid {
 	width: 100%;
-	padding: 25px 0;
+	padding: 15px 0;
 	border: 1px solid #b3acac42;
 	border-radius: 8px;
 	background-color: #fff;
@@ -30,7 +30,8 @@
 	align-items: center;
 	justify-content: center;
 	will-change: transform;
-	margin: 34px 5px;
+	margin: 34px 0px;
+	min-width: 200px;
 		@media screen and (min-width: 765px) {
 			width: 30%;
 			min-width: 200px;
@@ -41,8 +42,8 @@
 			width: 23%;
 		}
 	img {
-		width: 170px;
-		height: auto;
+		width: 70%;
+		
 		border-radius: 5px;
 		padding: 15px 0;
 		margin: 0 auto;
@@ -70,8 +71,8 @@
 	}
 		a {
 			display: block;
-			margin: 20px auto 0;
-			max-width: 30%;
+			margin: 15px auto 0;
+			width: 80px;
 			text-align: center;
 			padding: 8px 25px;
 			height: 20px;
@@ -80,6 +81,7 @@
 			color: #fff;
 			font-family: MyriadProRegular;
 			cursor: pointer;
+			
 		}
 		a:hover {
 			background-color: #177ed8;
