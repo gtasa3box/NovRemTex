@@ -1,20 +1,22 @@
 .header {
+	position: fixed;
+	left: 0;
+	top: 0;
 	width: 100%;
-	background-color: #004B8D;
+	padding: 0 15px;
+	background-color: #004480;
+	border-bottom: 1px solid #003b6d;
+	box-shadow: 0 0 15px 0 #001c3591;
 	height: 75px;
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
 	z-index: 3;
-	position: relative;
+	@media(min-width: 1000px){
+		padding: 0 25px;
+	}
 	@media screen and (min-width: 1200px){
 		height: 80px;
-	}
-
-	&__logo {
-		padding: 10px 0 0 20px;
-		@media screen and (min-width: 1200px) {
-			padding: 10px 0 0 40px;
-		}
 	}
 }
 
@@ -22,12 +24,6 @@
 	background-image: url(./static/novwhite.png);
 	width: 151px;
 	height: 50px;
-}
-
-.img {
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
 }
 
 
@@ -45,13 +41,17 @@
 
 /* стилизуем кнопку */
 .menu__btn {
-	display: flex; 
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	position: relative;
-	width: 24px;
-	height: 13.5px;
+	width: 30px;
+	height: 27px;
+	border-radius: 3px;
+	border: 1px solid #1d79ca;
+	box-shadow: 0 0 10px 0 #003a6d;
 	cursor: pointer;
 	z-index: 1;
-	margin: 20px 30px 0 0;
 	@media screen and (min-width: 1200px) {
 		display: none;
 	}
@@ -63,9 +63,9 @@
 .menu__btn > span::after {
 	display: block;
 	position: absolute;
-	width: 100%;
-	height: 3px;
-	background-color: #EF8032;
+	width: 77%;
+	height: 2.5px;
+	background-color: #e5f8ff;
 }
 .menu__btn > span::before {
 	content: '';
@@ -84,7 +84,7 @@
 	display: none;
 	position: absolute;
 	width: 100%;
-	margin-top: 20px;
+	margin-top: 15px;
 	list-style: none;
 	text-align: center;
 	background-color: #003b6f;
