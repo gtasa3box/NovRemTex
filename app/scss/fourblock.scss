@@ -5,10 +5,11 @@
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	padding: 0 50px 34px 50px;
 	box-sizing: border-box;
+	padding-bottom: 40px;
 	&__title {
 		margin-top: 40px;
+		margin-bottom: 40px;
 		color: #fff;
 	}
 
@@ -21,7 +22,6 @@
 		width: 100%;
 		padding-bottom: 20px;
 		border-radius: 8px;
-		margin: 34px 5px;
 		background-color: #fff;
 		display: flex;
 		flex-direction: column;
@@ -31,7 +31,6 @@
 			width: 30%;
 			min-width: 200px;
 			max-width: 250px;
-			margin: 34px 20px;
 		}
 		@media screen and (min-width: 1350px) {
 			width: 23%;
