@@ -5,12 +5,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
-</script>
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link rel="stylesheet" type="text/css" href="jquery.fancybox.min.css">
 <link rel="shortcut icon" href="/static/favicon.png" type="image/png">
 <title>НовРемТех</title>
 </head>
@@ -170,30 +167,22 @@
 			</div>
 		</section>
 		<section id="4" class="fiveblock">
-			<div class="contacts fiveblock__contacts">
+			<div class="contacts fiveblock__contacts box">
 				<div class="fiveblock__title">
 					<h2 class="title">Контакты</h2>
 				</div>
 				<div class="fiveblock__phone"><a href="tel:+78312465432">+7 (8312) 46-54-32</a></div>
 				<p>603002, г.Н.Новгород ул.Обухова 11, оф.208</p>
-				<div class="fiveblock__button"><a class="popup-open" href="">Свяжись</a></div>
-			</div>
-
-						<!--Модальное окно-->
-
-			<div class="popup-overlay">
-				<div class="popup">
-					<a class="popup-close" href="#"></a>
-					<form>
-						<label for="email">Введите email</label>
-						<input class="popup__input" id="email" type="email" value="">
-						<label for="number">Введите номер телефона</label>
-						<input class="popup__input" id="number" type="number" value="">
-						<p>Дополнительная информация:</p>
-						<textarea class="popup_textarea"></textarea>
-						<button type="submit" class="popup__button" name="submitbtn" value="">Отправить</button>
-					</form>
-				</div>
+				<div class="fiveblock__button"><a >Свяжись</a></div>
+				<form class="popup" method="post">
+					<label for="email">Введите email</label>
+					<input class="popup__input" id="email" type="email" value="">
+					<label for="number">Введите номер телефона</label>
+					<input class="popup__input" id="number" type="number" value="">
+					<p>Дополнительная информация:</p>
+					<textarea class="popup_textarea"></textarea>
+					<button type="submit" class="popup__button" name="submitbtn" value="">Отправить</button>
+				</form>
 			</div>
 		</section>
 		<section class="footer">
@@ -203,7 +192,11 @@
 			<p>Региональный представитель фирмы Belzona Polymerics Ltd.</p>
 		</section>
 	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
+	</script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+	
 </body>
 
 </html>
