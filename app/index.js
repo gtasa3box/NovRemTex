@@ -41,6 +41,10 @@ $('.js-slick').slick({
 	]
 });
 
+	$(document).ready(function() {
+		$(".popup").fancybox();
+	});
+
 
 
 

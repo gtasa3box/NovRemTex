@@ -7,7 +7,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
-<link rel="stylesheet" type="text/css" href="jquery.fancybox.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
 <link rel="shortcut icon" href="/static/favicon.png" type="image/png">
 <title>НовРемТех</title>
 </head>
@@ -36,7 +36,7 @@
 			<div class="oneblock__tagline">
 				<h1 class="title title__oneblock">Ремонт вместо замены</h1>
 				<p class="text">Ремонт вместо замены всем всем всем</p>
-				<a class="oneblock__tagline__button popup-open">Связаться!</a>
+				<a class="oneblock__tagline__button" data-fancybox href="#popup">Связаться!</a>
 			</div>
 		</section>
 		<section class="twoblock">
@@ -173,17 +173,18 @@
 				</div>
 				<div class="fiveblock__phone"><a href="tel:+78312465432">+7 (8312) 46-54-32</a></div>
 				<p>603002, г.Н.Новгород ул.Обухова 11, оф.208</p>
-				<div class="fiveblock__button"><a >Свяжись</a></div>
-				<form class="popup" method="post">
-					<label for="email">Введите email</label>
-					<input class="popup__input" id="email" type="email" value="">
+				<div data-fancybox href="#popup" class="fiveblock__button"><a >Свяжись</a></div>
+			</div>
+				<form id="popup" class="popup" method="post">
+					<label for="email">Введите email<br></label>
+					<input class="popup__input" id="email" type="email" value=""><br>
 					<label for="number">Введите номер телефона</label>
 					<input class="popup__input" id="number" type="number" value="">
 					<p>Дополнительная информация:</p>
 					<textarea class="popup_textarea"></textarea>
 					<button type="submit" class="popup__button" name="submitbtn" value="">Отправить</button>
 				</form>
-			</div>
+
 		</section>
 		<section class="footer">
 			<div class="footer__logo">
